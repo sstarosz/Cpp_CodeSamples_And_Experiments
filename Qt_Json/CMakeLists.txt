@@ -18,10 +18,11 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 
 add_executable(Qt_Json
-        main.cpp)
+                main.cpp
+        )
 
 
-target_link_libraries(Qt_Json PRIVATE Qt5::Widgets)
+target_link_libraries(Qt_Json PRIVATE Qt5::Widgets Qt5::Core)
 
 
 #run windeployqt.exe to copy required qt dll to build folder (fixing dependencies)
